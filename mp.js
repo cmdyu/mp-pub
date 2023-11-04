@@ -1,2 +1,2 @@
-alert(5)
-console.log(33)
+const title = document.querySelector("#activity-name").innerText
+console.log(title)
