@@ -19,8 +19,15 @@
       "js": ["mp.js"]
     },
     {
+      "matches": ["https://mp.csdn.net/mp_blog/creation/editor*"],
+      "js": ["sites/csdn-get-data.js"],
+      "run_at": "document_end"
+    },
+    {
       "matches": ["https://mp.csdn.net/mp_blog/creation/editor?from=mp"],
-      "js": ["sites/csdn.js"]
+      "js": ["sites/csdn.js"],
+      "run_at": "document_end",
+      "world": "MAIN"
     }
   ]
 }
