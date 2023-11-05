@@ -10,10 +10,17 @@
   "permissions": [
     "tabs"
   ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
   "content_scripts": [
     {
       "matches": ["https://mp.weixin.qq.com/s?__biz=*"],
       "js": ["mp.js"]
+    },
+    {
+      "matches": ["https://mp.csdn.net/mp_blog/creation/editor?from=mp"],
+      "js": ["sites/csdn.js"]
     }
   ]
 }

@@ -1,11 +1,4 @@
-async function pub() {
-  chrome.tabs.create({
-    url: "https://mp.csdn.net/mp_blog/creation/editor"
-  });
-
-  let [tab] = await chrome.tabs.query({ active: true, lastFocusedWindow: true });
-  console.log(tab)
+document.getElementById('pub-button').onclick = () => {
+  chrome.runtime.sendMessage('pub', (response) => {
+  })
 }
-
-const el = document.getElementById('pub-button')
-el.onclick = pub
