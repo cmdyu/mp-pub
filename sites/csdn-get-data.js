@@ -8,4 +8,4 @@ setTimeout(() => {
 
         document.querySelector("#cke_1_contents > iframe").contentWindow.document.body.innerHTML = res.content
     })
-}, 5000)
+}, 6000)
