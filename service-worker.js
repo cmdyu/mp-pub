@@ -1,10 +1,12 @@
 let store = {
-    title: ''
+    title: '',
+    content: ''
 }
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (message.name === 'setData') {
         store.title = message.data.title
+        store.content = message.data.content
     }
 
     if (message === 'getData') {
