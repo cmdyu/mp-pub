@@ -1,8 +1,9 @@
 setTimeout(() => {
-    console.log(8)
-
     chrome.runtime.sendMessage('getData', res => {
-        console.log(7,res)
-        document.querySelector("#txtTitle").value = res.title
+        const titleInput = document.querySelector("#txtTitle")
+
+        titleInput.value = res.title
+        // 触发字数校验
+        titleInput.dispatchEvent(new Event('input'))
     })
 }, 3000)
