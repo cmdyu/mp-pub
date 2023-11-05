@@ -1,5 +1,7 @@
 setTimeout(() => {
-    const content = document.querySelector("#cke_1_contents > iframe").contentWindow.document.body.innerHTML
+    let content = document.querySelector("#cke_1_contents > iframe").contentWindow.document.body.innerHTML
+    content += '\n<p>欢迎关注微信公众号：文本魔术，了解更多。</p>'
+
     window.editorxx.setData(content)
 
     setTimeout(() => {
