@@ -13,7 +13,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         sendResponse(store)
     }
 
-    if (message === 'pub') {
+    if (message === 'pub-to-csdn') {
         chrome.tabs.create({
             url: "https://mp.csdn.net/mp_blog/creation/editor?from=mp"
         })

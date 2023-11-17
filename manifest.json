@@ -19,7 +19,7 @@
       "js": ["mp.js"]
     },
     {
-      "matches": ["https://mp.csdn.net/mp_blog/creation/editor*"],
+      "matches": ["https://mp.csdn.net/mp_blog/creation/editor?from=*"],
       "js": ["sites/csdn-get-data.js"],
       "run_at": "document_end"
     },

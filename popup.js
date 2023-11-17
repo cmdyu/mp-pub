@@ -1,4 +1,4 @@
-document.getElementById('pub-button').onclick = () => {
-  chrome.runtime.sendMessage('pub', (response) => {
+document.getElementById('pub-button-csdn').onclick = () => {
+  chrome.runtime.sendMessage('pub-to-csdn', (response) => {
   })
 }
